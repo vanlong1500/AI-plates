@@ -1,0 +1,59 @@
+<div class="container">
+  <h1>Thêm Nhân Viên Mới</h1>
+  <form id="add-employee-form">
+    <div class="grid grid-cols-4 h-full p-4">
+      <label for="name" class="col-span-1 flex items-center justify-center"
+        >Tên:</label
+      >
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="col-span-3 border border-gray-300 p-2 rounded-lg"
+        required
+      />
+    </div>
+    <div class="grid grid-cols-4 h-full p-4">
+      <label for="position" class="col-span-1 flex items-center justify-center"
+        >Chức vụ:</label
+      >
+      <input
+        type="text"
+        id="position"
+        name="position"
+        class="col-span-3 border border-gray-300 p-2 rounded-lg"
+        required
+      />
+    </div>
+    <div class="grid grid-cols-4 h-full p-4">
+      <label for="motobike" class="col-span-1 flex items-center justify-center"
+        >Biển số xe:</label
+      >
+      <input
+        type="text"
+        id="motobike"
+        name="motobike"
+        class="col-span-3 border border-gray-300 p-2 rounded-lg"
+        required
+      />
+    </div>
+    <!-- Chỗ chứa các nút -->
+    <div class="flex justify-end gap-2 p-4">
+      <button
+        type="button"
+        class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500"
+        id="exitUser-btn"
+      >
+        Thoát
+      </button>
+      <button
+        type="submit"
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        id="addUser-btn"
+      >
+        Thêm
+      </button>
+    </div>
+  </form>
+  <p id="result"></p>
+</div>

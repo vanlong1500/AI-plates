@@ -1,0 +1,54 @@
+<div class="container">
+  <!-- <h1>Search Nhân Viên</h1> -->
+  <form id="search-employee-form">
+    <div class="flex">
+      <div class="grid grid-cols-3 h-full p-1.5">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="col-span-3 border border-gray-300 p-1.5 rounded-lg"
+          placeholder="Tên"
+        />
+      </div>
+      <div class="grid grid-cols-3 h-full p-1.5">
+        <input
+          type="text"
+          id="position"
+          name="position"
+          class="col-span-3 border border-gray-300 p-1.5 rounded-lg"
+          placeholder="Chức vụ"
+        />
+      </div>
+      <div class="grid grid-cols-3 h-full p-1.5">
+        <input
+          type="text"
+          id="xe"
+          name="xe"
+          class="col-span-3 border border-gray-300 p-1.5 rounded-lg"
+          placeholder="Biển số xe"
+        />
+      </div>
+    </div>
+
+    <!-- Chỗ chứa các nút -->
+    <div class="flex justify-end gap-2 p-4">
+      <button
+        type="submit"
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        id="search-btn"
+      >
+        Tìm
+      </button>
+    </div>
+  </form>
+  <!-- 
+  h-64 → chiều cao cố định
+  overflow-y-auto → tự động hiện scroll khi dữ liệu dài
+  -->
+  <div
+    id="search-result"
+    style="display: none"
+    class="border border-gray-300 rounded-lg p-2 h-64 overflow-y-auto"
+  ></div>
+</div>
