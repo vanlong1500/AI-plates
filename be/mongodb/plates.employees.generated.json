@@ -1,0 +1,182 @@
+[
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e31"
+    },
+    "name": "Hoang Van",
+    "avatar": "/uploads/1761307089516-wv4mnk.jpg",
+    "rank": "Chuyên gia",
+    "position": "Nhân viên",
+    "plateArea": "59E5",
+    "plateNum": 5678,
+    "status": "Vào",
+    "error": false,
+    "note": "",
+    "time": {
+      "$date": "2025-11-03T12:08:34.513129+00:00"
+    },
+    "no_data": "người lạ"
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e32"
+    },
+    "name": "Pham Thi",
+    "avatar": "/uploads/1761307091373-n14fow.jpeg",
+    "rank": "Cao",
+    "position": "Giám sát",
+    "plateArea": "59A1",
+    "plateNum": "12345",
+    "status": "Ra",
+    "error": false,
+    "note": "",
+    "time": {
+      "$date": "2025-11-03T11:15:34.513176+00:00"
+    },
+    "no_data": "người lạ"
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e33"
+    },
+    "name": "Nguyen Thi F",
+    "avatar": "/assets/images/users/1-old.jpg",
+    "rank": "Chuyên gia",
+    "position": "Giám sát",
+    "plateArea": "59E5",
+    "plateNum": 56789,
+    "status": "Vào",
+    "error": true,
+    "note": "Xe đã vào trước đó",
+    "time": {
+      "$date": "2025-11-03T12:09:34.513188+00:00"
+    },
+    "no_data": ""
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e34"
+    },
+    "name": "Nguyen Van A",
+    "avatar": "/assets/images/users/4.jpg",
+    "rank": "Trung cấp",
+    "position": "Nhân viên",
+    "plateArea": "59E5",
+    "plateNum": 56789,
+    "status": "Ra",
+    "error": true,
+    "note": "Xe đã ra trước đó",
+    "time": {
+      "$date": "2025-11-03T11:46:34.513195+00:00"
+    },
+    "no_data": ""
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e35"
+    },
+    "name": "Pham Thi D",
+    "avatar": "/assets/images/users/7.jpg",
+    "rank": "Cao cấp",
+    "position": "Nhân viên",
+    "plateArea": "59A1",
+    "plateNum": 12345,
+    "status": "Vào",
+    "error": true,
+    "note": "",
+    "time": {
+      "$date": "2025-11-03T11:37:34.513201+00:00"
+    },
+    "no_data": "người lạ"
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e36"
+    },
+    "name": "Pham Van I",
+    "avatar": "/assets/images/users/5.jpg",
+    "rank": "Chuyên gia",
+    "position": "Nhân viên",
+    "plateArea": "59E5",
+    "plateNum": 56789,
+    "status": "Vào",
+    "error": false,
+    "note": "",
+    "time": {
+      "$date": "2025-11-03T11:57:34.513206+00:00"
+    },
+    "no_data": "người lạ"
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e37"
+    },
+    "name": "Le Van C",
+    "avatar": "/assets/images/users/8.jpg",
+    "rank": "Trung cấp",
+    "position": "Giám đốc",
+    "plateArea": "59A1",
+    "plateNum": 12345,
+    "status": "Vào",
+    "error": false,
+    "note": "",
+    "time": {
+      "$date": "2025-11-03T12:10:34.513211+00:00"
+    },
+    "no_data": "người lạ"
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e38"
+    },
+    "name": "Hoang Van E",
+    "avatar": "/assets/images/users/1-old.jpg",
+    "rank": "Trung cấp",
+    "position": "Giám sát",
+    "plateArea": "59E5",
+    "plateNum": 56789,
+    "status": "Ra",
+    "error": false,
+    "note": "Xe đã ra trước đó",
+    "time": {
+      "$date": "2025-11-03T11:05:34.513218+00:00"
+    },
+    "no_data": "người lạ"
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e39"
+    },
+    "name": "Pham Thi D",
+    "avatar": "/assets/images/users/4.jpg",
+    "rank": "Trung cấp",
+    "position": "Nhân viên",
+    "plateArea": "59B2",
+    "plateNum": 23456,
+    "status": "Ra",
+    "error": false,
+    "note": "Xe đã ra trước đó",
+    "time": {
+      "$date": "2025-11-03T11:24:34.513224+00:00"
+    },
+    "no_data": "người lạ"
+  },
+  {
+    "_id": {
+      "$oid": "68fb56a9b60b7e8823039e3a"
+    },
+    "name": "Le Thi H",
+    "avatar": "/assets/images/users/8.jpg",
+    "rank": "Sơ cấp",
+    "position": "Nhân viên",
+    "plateArea": "59D4",
+    "plateNum": 45678,
+    "status": "Vào",
+    "error": false,
+    "note": "Xe đã vào trước đó",
+    "time": {
+      "$date": "2025-11-03T11:23:34.513232+00:00"
+    },
+    "no_data": ""
+  }
+]

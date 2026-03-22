@@ -1,0 +1,701 @@
+[{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e31"
+  },
+  "name": "Hoang Van",
+  "avatar": "/uploads/1761307089516-wv4mnk.jpg",
+  "rank": "Chuyên gia",
+  "position": "Nhân viên",
+  "plateArea": "59E5",
+  "plateNum": "5678",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e32"
+  },
+  "name": "Pham Thi",
+  "avatar": "/uploads/1761307091373-n14fow.jpeg",
+  "rank": "Cao",
+  "position": "Giám sát",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e33"
+  },
+  "name": "Nguyen Thi F",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Chuyên gia",
+  "position": "Giám sát",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Enter",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e34"
+  },
+  "name": "Nguyen Van A",
+  "avatar": "/assets/images/users/4.jpg",
+  "rank": "Trung cấp",
+  "position": "Nhân viên",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e35"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/7.jpg",
+  "rank": "Cao cấp",
+  "position": "Nhân viên",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e36"
+  },
+  "name": "Pham Van I",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Chuyên gia",
+  "position": "Nhân viên",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e37"
+  },
+  "name": "Le Van C",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Trung cấp",
+  "position": "Giám đốc",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e38"
+  },
+  "name": "Hoang Van E",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Trung cấp",
+  "position": "Giám sát",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e39"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/4.jpg",
+  "rank": "Trung cấp",
+  "position": "Nhân viên",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e3a"
+  },
+  "name": "Le Thi H",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Sơ cấp",
+  "position": "Nhân viên",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e3b"
+  },
+  "name": "Pham Van I",
+  "avatar": "/assets/images/users/6.jpg",
+  "rank": "Trung cấp",
+  "position": "Giám đốc",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Enter",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e3c"
+  },
+  "name": "Tran Van G",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Sơ cấp",
+  "position": "Quản lý",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e3d"
+  },
+  "name": "Nguyen Thi F",
+  "avatar": "/assets/images/users/2.jpg",
+  "rank": "Chuyên gia",
+  "position": "Giám đốc",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e3e"
+  },
+  "name": "Le Thi H",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Sơ cấp",
+  "position": "Nhân viên",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Enter",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e3f"
+  },
+  "name": "Nguyen Van A",
+  "avatar": "/assets/images/users/7.jpg",
+  "rank": "Sơ cấp",
+  "position": "Giám đốc",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e40"
+  },
+  "name": "Hoang Thi J",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Sơ cấp",
+  "position": "Giám sát",
+  "plateArea": "59C3",
+  "plateNum": "34567",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e41"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/6.jpg",
+  "rank": "Cao cấp",
+  "position": "Giám đốc",
+  "plateArea": "59C3",
+  "plateNum": "34567",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e42"
+  },
+  "name": "Le Thi H",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Cao cấp",
+  "position": "Nhân viên",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e43"
+  },
+  "name": "Pham Van I",
+  "avatar": "/assets/images/users/3.jpg",
+  "rank": "Cao cấp",
+  "position": "Giám đốc",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e44"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/6.jpg",
+  "rank": "Chuyên gia",
+  "position": "Quản lý",
+  "plateArea": "59C3",
+  "plateNum": "34567",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e45"
+  },
+  "name": "Tran Thi B",
+  "avatar": "/assets/images/users/6.jpg",
+  "rank": "Trung cấp",
+  "position": "Quản lý",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e46"
+  },
+  "name": "Tran Van G",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Chuyên gia",
+  "position": "Giám sát",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e47"
+  },
+  "name": "Nguyen Thi F",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Trung cấp",
+  "position": "Nhân viên",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e48"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Trung cấp",
+  "position": "Giám sát",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e49"
+  },
+  "name": "Nguyen Van A",
+  "avatar": "/assets/images/users/7.jpg",
+  "rank": "Cao cấp",
+  "position": "Quản lý",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e4a"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Sơ cấp",
+  "position": "Giám đốc",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e4b"
+  },
+  "name": "Hoang Thi J",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Chuyên gia",
+  "position": "Giám sát",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e4c"
+  },
+  "name": "Le Van C",
+  "avatar": "/assets/images/users/2.jpg",
+  "rank": "Sơ cấp",
+  "position": "Nhân viên",
+  "plateArea": "59C3",
+  "plateNum": "34567",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e4d"
+  },
+  "name": "Tran Van G",
+  "avatar": "/assets/images/users/6.jpg",
+  "rank": "Trung cấp",
+  "position": "Giám sát",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e4e"
+  },
+  "name": "Tran Thi B",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Chuyên gia",
+  "position": "Quản lý",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e4f"
+  },
+  "name": "Tran Van G",
+  "avatar": "/assets/images/users/7.jpg",
+  "rank": "Chuyên gia",
+  "position": "Quản lý",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Enter",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e50"
+  },
+  "name": "Le Thi H",
+  "avatar": "/assets/images/users/6.jpg",
+  "rank": "Chuyên gia",
+  "position": "Quản lý",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e51"
+  },
+  "name": "Le Van C",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Chuyên gia",
+  "position": "Giám sát",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e52"
+  },
+  "name": "Le Thi H",
+  "avatar": "/assets/images/users/6.jpg",
+  "rank": "Sơ cấp",
+  "position": "Giám đốc",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e53"
+  },
+  "name": "Tran Thi B",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Cao cấp",
+  "position": "Quản lý",
+  "plateArea": "59C3",
+  "plateNum": "34567",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e54"
+  },
+  "name": "Le Thi H",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Cao cấp",
+  "position": "Quản lý",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e55"
+  },
+  "name": "Hoang Van E",
+  "avatar": "/assets/images/users/7.jpg",
+  "rank": "Sơ cấp",
+  "position": "Quản lý",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e56"
+  },
+  "name": "Nguyen Van A",
+  "avatar": "/assets/images/users/4.jpg",
+  "rank": "Chuyên gia",
+  "position": "Nhân viên",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e57"
+  },
+  "name": "Tran Van G",
+  "avatar": "/assets/images/users/3.jpg",
+  "rank": "Sơ cấp",
+  "position": "Quản lý",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e58"
+  },
+  "name": "Hoang Thi J",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Sơ cấp",
+  "position": "Quản lý",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Enter",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e59"
+  },
+  "name": "Nguyen Van A",
+  "avatar": "/assets/images/users/3.jpg",
+  "rank": "Sơ cấp",
+  "position": "Giám sát",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e5a"
+  },
+  "name": "Tran Thi B",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Cao cấp",
+  "position": "Giám sát",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e5b"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Sơ cấp",
+  "position": "Quản lý",
+  "plateArea": "59D4",
+  "plateNum": "45678",
+  "status": "Enter",
+  "error": true
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e5c"
+  },
+  "name": "Tran Thi B",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Cao cấp",
+  "position": "Quản lý",
+  "plateArea": "59C3",
+  "plateNum": "34567",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e5d"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/1-old.jpg",
+  "rank": "Sơ cấp",
+  "position": "Quản lý",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e5e"
+  },
+  "name": "Pham Thi D",
+  "avatar": "/assets/images/users/8.jpg",
+  "rank": "Cao cấp",
+  "position": "Giám đốc",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e5f"
+  },
+  "name": "Nguyen Thi F",
+  "avatar": "/assets/images/users/3.jpg",
+  "rank": "Trung cấp",
+  "position": "Nhân viên",
+  "plateArea": "59E5",
+  "plateNum": "56789",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e60"
+  },
+  "name": "Tran Van G",
+  "avatar": "/assets/images/users/5.jpg",
+  "rank": "Sơ cấp",
+  "position": "Giám đốc",
+  "plateArea": "59A1",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb56a9b60b7e8823039e61"
+  },
+  "name": "Le Van C",
+  "avatar": "/assets/images/users/4.jpg",
+  "rank": "Sơ cấp",
+  "position": "Giám sát",
+  "plateArea": "59B2",
+  "plateNum": "23456",
+  "status": "Out",
+  "error": false
+},
+{
+  "_id": {
+    "$oid": "68fb6399fae64f0349c9eb4c"
+  },
+  "name": "a",
+  "rank": "Thấp",
+  "position": "thực tập sinh",
+  "plateArea": "59C5",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": false,
+  "avatar": "/uploads/1761305497068-jgscle.png",
+  "createdAt": {
+    "$date": "2025-10-24T11:31:37.074Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fb63b6fae64f0349c9eb4d"
+  },
+  "name": "new",
+  "rank": "Thấp",
+  "position": "thực tập sinh",
+  "plateArea": "59C5",
+  "plateNum": "12345",
+  "status": "Out",
+  "error": false,
+  "avatar": "/uploads/1761305526891-j2919k.jpg",
+  "createdAt": {
+    "$date": "2025-10-24T11:32:06.894Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fb63ddfae64f0349c9eb4e"
+  },
+  "name": "new",
+  "rank": "Thấp",
+  "position": "nhân viên mới",
+  "plateArea": "59C5",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": false,
+  "avatar": "/uploads/1761305565744-vloydt.jpeg",
+  "createdAt": {
+    "$date": "2025-10-24T11:32:45.759Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68fb69f23db34b58df695c37"
+  },
+  "name": "a",
+  "rank": "Thấp",
+  "position": "thực tập sinh",
+  "plateArea": "59C5",
+  "plateNum": "12345",
+  "status": "Enter",
+  "error": false,
+  "avatar": "/uploads/1761307122853-098orm.png",
+  "createdAt": {
+    "$date": "2025-10-24T11:58:42.855Z"
+  }
+}]
