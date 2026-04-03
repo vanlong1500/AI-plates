@@ -10,9 +10,9 @@ from api import *
 from newSql import save_plate
 import threading
 from employee_routes import employee_bp ,init_socket_events,broadcast_latest_data
-# from detector_logic import LicensePlateSystem
+from detector_logic import LicensePlateSystem
 from extensions import socketio
-
+import json
 
 app = Flask(__name__)
 
@@ -23,14 +23,6 @@ CORS(app, resources={r"/*": {
     "allow_headers": ["Content-Type", "Authorization", "Access-Control-Allow-Headers"],
     "expose_headers": ["Content-Type", "Authorization"]
 }})
-
-# 2. Middleware xử lý yêu cầu OPTIONS (Preflight) thủ công để dứt điểm lỗi
-# @app.after_request
-# def after_request(response):
-#     response.headers.add('Access-Control-Allow-Origin', '*')
-#     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-#     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
-#     return response
 
 app.register_blueprint(employee_bp)
 socketio.init_app(app)
@@ -53,8 +45,6 @@ def login():
 
 @app.route('/api/getZones', methods=['GET'])
 def get_zones():
-    # Ví dụ lấy từ một collection khác có tên là 'zones'
-    # Hoặc đơn giản là trả về một list cố định từ DB
     zones_in_db = get_zone() # Lấy các tên không trùng lặp
     return jsonify(zones_in_db)
 # mở camera
@@ -68,78 +58,82 @@ test = None
 def index():
     return send_from_directory(app.static_folder, "index.html")
 
-# camera_stream = "rtsp://admin:camera2025@192.168.1.10:554/Streaming/Channels/101" 
-# camera_stream2 = "rtsp://admin:camera2025@192.168.1.10:554/Streaming/Channels/101"  # Sử dụng camera mặc định
-# detector_1 = LicensePlateSystem(camera_stream, True) 
-# detector_2 = LicensePlateSystem(camera_stream2, False)
+with open("config.json", "r", encoding="utf-8") as f:
+    config = json.load(f)
+
+camera_stream = config.get("camera1")
+camera_stream2 = config.get("camera2")  # Sử dụng camera mặc định
+
+detector_1 = LicensePlateSystem(camera_stream, True) 
+detector_2 = LicensePlateSystem(camera_stream2, False)
 test = ""
 last_save_time = 0
 last_save_time2 = 0
 
-# @app.route("/video")
-# def video():
-#     if not detector_1.running:
-#         threading.Thread(target=detector_1.process_ai, daemon=True).start()
+@app.route("/video")
+def video():
+    if not detector_1.running:
+        threading.Thread(target=detector_1.process_ai, daemon=True).start()
 
-#     def generate():
-#         global test # BẮT BUỘC có dòng này để dùng biến toàn cục
-#         global last_save_time
-#         try:
-#             while True:
-#                 frame = detector_1.processed_frame
-#                 if frame is not None:
-#                     current_time = time.time()
-#                     # So sánh với biến test để tránh lưu trùng
-#                     if detector_1.is_detected and detector_1.plate_text != test:
-#                         if (current_time - last_save_time) > 3:
-#                             save_plate(detector_1.plate_text, detector_1.status, frame)
-#                             test = detector_1.plate_text
-#                             last_save_time = current_time
-#                             print(f"✅ Đã lưu biển số: {test}")
-#                             broadcast_latest_data()
-#                         else:
-#                             # Trong thời gian 3 giây này, video vẫn chạy nhưng không chạy hàm save_plate
-#                             pass
-#                     ret, buffer = cv2.imencode('.jpg', frame)
-#                     yield (b'--frame\r\n'
-#                            b'Content-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
-#                 time.sleep(0.03)
-#         except Exception as e:
-#             print(f"--- [INFO] Kết nối dừng: {e} ---")
+    def generate():
+        global test # BẮT BUỘC có dòng này để dùng biến toàn cục
+        global last_save_time
+        try:
+            while True:
+                frame = detector_1.processed_frame
+                if frame is not None:
+                    current_time = time.time()
+                    # So sánh với biến test để tránh lưu trùng
+                    if detector_1.is_detected and detector_1.plate_text != test:
+                        if (current_time - last_save_time) > 3:
+                            save_plate(detector_1.plate_text, detector_1.status, frame)
+                            test = detector_1.plate_text
+                            last_save_time = current_time
+                            print(f"✅ Đã lưu biển số: {test}")
+                            broadcast_latest_data()
+                        else:
+                            # Trong thời gian 3 giây này, video vẫn chạy nhưng không chạy hàm save_plate
+                            pass
+                    ret, buffer = cv2.imencode('.jpg', frame)
+                    yield (b'--frame\r\n'
+                           b'Content-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
+                time.sleep(0.03)
+        except Exception as e:
+            print(f"--- [INFO] Kết nối dừng: {e} ---")
             
-#     return Response(generate(), mimetype="multipart/x-mixed-replace; boundary=frame")
+    return Response(generate(), mimetype="multipart/x-mixed-replace; boundary=frame")
 
-# @app.route("/video2")
-# def video2():
-#     if not detector_2.running:
-#         threading.Thread(target=detector_2.process_ai, daemon=True).start()
+@app.route("/video2")
+def video2():
+    if not detector_2.running:
+        threading.Thread(target=detector_2.process_ai, daemon=True).start()
 
-#     def generate():
-#         global test # BẮT BUỘC có dòng này để dùng biến toàn cục
-#         global last_save_time2
-#         try:
-#             while True:
-#                 frame = detector_2.processed_frame
-#                 if frame is not None:
-#                     current_time = time.time()
-#                     # So sánh với biến test để tránh lưu trùng
-#                     if detector_2.is_detected and detector_2.plate_text != test:
-#                         if (current_time - last_save_time2) > 3:
-#                             save_plate(detector_2.plate_text, detector_2.status, frame)
-#                             test = detector_2.plate_text
-#                             last_save_time2 = current_time
-#                             print(f"✅ Đã lưu biển số: {test}")
-#                         else:
-#                             # Trong thời gian 3 giây này, video vẫn chạy nhưng không chạy hàm save_plate
-#                             pass
-#                     ret, buffer = cv2.imencode('.jpg', frame)
-#                     yield (b'--frame\r\n'
-#                            b'Content-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
-#                 time.sleep(0.03)
-#         except Exception as e:
-#             print(f"--- [INFO] Kết nối dừng: {e} ---")
+    def generate():
+        global test # BẮT BUỘC có dòng này để dùng biến toàn cục
+        global last_save_time2
+        try:
+            while True:
+                frame = detector_2.processed_frame
+                if frame is not None:
+                    current_time = time.time()
+                    # So sánh với biến test để tránh lưu trùng
+                    if detector_2.is_detected and detector_2.plate_text != test:
+                        if (current_time - last_save_time2) > 3:
+                            save_plate(detector_2.plate_text, detector_2.status, frame)
+                            test = detector_2.plate_text
+                            last_save_time2 = current_time
+                            print(f"✅ Đã lưu biển số: {test}")
+                        else:
+                            # Trong thời gian 3 giây này, video vẫn chạy nhưng không chạy hàm save_plate
+                            pass
+                    ret, buffer = cv2.imencode('.jpg', frame)
+                    yield (b'--frame\r\n'
+                           b'Content-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
+                time.sleep(0.03)
+        except Exception as e:
+            print(f"--- [INFO] Kết nối dừng: {e} ---")
             
-#     return Response(generate(), mimetype="multipart/x-mixed-replace; boundary=frame")
+    return Response(generate(), mimetype="multipart/x-mixed-replace; boundary=frame")
 
 
 # kết nối MongoDB

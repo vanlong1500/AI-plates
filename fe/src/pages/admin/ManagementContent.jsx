@@ -194,15 +194,6 @@ const ManagementContent = () => {
       setErrors((prev) => ({ ...prev, number: true }));
       return;
     }
-    if (!editValues.username || editValues.username.trim() === "") {
-      setErrors((prev) => ({ ...prev, username: true }));
-      return;
-    }
-    if (!editValues.password || editValues.password.trim() === "") {
-      setErrors((prev) => ({ ...prev, password: true }));
-      return;
-    }
-
     // 3. Log dữ liệu ra console để bạn kiểm tra (Debugging)
     console.log("Dữ liệu gửi lên:", { id, ...editValues });
     try {
