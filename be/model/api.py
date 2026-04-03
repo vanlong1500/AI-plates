@@ -24,7 +24,7 @@ def register_user(data):
     password = bcrypt.hashpw(
         password_notbcr.encode('utf-8'),
         bcrypt.gensalt()
-        )
+    )
     role_id = data.get("role", 2)
     # 1. Kiểm tra xem user đã tồn tại chưa
     # Subject: server | Main Verb: kiểm tra (check) | Nouns: người dùng (user), tên đăng nhập (username)
@@ -61,6 +61,8 @@ def login_user(data):
     
     # Tìm người dùng trong database
     user = users_col.find_one({"username": username})
+    if not user:
+        return {"success": False, "message": "Sai tài khoản hoặc mật khẩu!"}
     is_match = bcrypt.checkpw(
         password.encode("utf-8"),
         user["password"].encode("utf-8")

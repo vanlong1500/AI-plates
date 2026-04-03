@@ -13,10 +13,10 @@ const InfCus = ({ title, nameCus }) => {
 
   const [searchTerm, setSearchTerm] = useState("");
   const [showAddModal, setShowAddModal] = useState(false);
-  const [newStaff, setNewStaff] = useState({ name: "" });
+  const [infEmployee, setInfEmployee] = useState({ name: "" });
   const [newPassUser, setNewPassUser] = useState({ username: "" });
   const fileInputRef = useRef(null);
-  const [infEmployee, setInfEmployee] = useState({});
+  // const [infEmployee, setInfEmployee] = useState({});
   const BASE_URL = "http://127.0.0.1:5000";
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const InfCus = ({ title, nameCus }) => {
     if (infEmployee.avatarFile) {
       formData.append("avatar", infEmployee.avatarFile);
     }
-
+    console.log("avatarFile:", infEmployee.avatarFile);
     // Thêm các cột động
     dynamicCols.forEach((col) => {
       formData.append(col.textName, infEmployee[col.textName] || "");
@@ -237,7 +237,7 @@ const InfCus = ({ title, nameCus }) => {
                         const file = e.target.files[0];
                         if (file) {
                           setPreviewImage(URL.createObjectURL(file));
-                          setNewStaff({ ...infEmployee, avatarFile: file });
+                          setInfEmployee({ ...infEmployee, avatarFile: file });
                         }
                       }}
                     />
@@ -256,7 +256,7 @@ const InfCus = ({ title, nameCus }) => {
                       placeholder="Họ tên (Chưa có dữ liệu)"
                       value={infEmployee.name || ""}
                       onChange={(val) => {
-                        setNewStaff({ ...infEmployee, name: val });
+                        setInfEmployee({ ...infEmployee, name: val });
                         if (val) {
                           setErrors((prev) => ({ ...prev, name: false }));
                         }
@@ -277,7 +277,7 @@ const InfCus = ({ title, nameCus }) => {
                       placeholder="Biển số"
                       value={infEmployee.number || ""}
                       onChange={(val) => {
-                        setNewStaff({ ...infEmployee, number: val });
+                        setInfEmployee({ ...infEmployee, number: val });
                         if (val) {
                           setErrors((prev) => ({ ...prev, number: false }));
                         }
@@ -298,7 +298,7 @@ const InfCus = ({ title, nameCus }) => {
                       placeholder="Khu vực"
                       value={infEmployee.area || ""}
                       onChange={(val) => {
-                        setNewStaff({ ...infEmployee, area: val });
+                        setInfEmployee({ ...infEmployee, area: val });
                         if (val) {
                           setErrors((prev) => ({ ...prev, area: false }));
                         }
