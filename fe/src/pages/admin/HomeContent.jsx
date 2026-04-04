@@ -163,7 +163,7 @@ const HomeContent = ({ title }) => {
       const data_to_send = {
         status: sta === 1 ? "Vào" : "Ra",
         pageNB: page,
-        limit: 2,
+        limit: 10,
       };
       const res = await fetch(`${BASE_URL}/status`, {
         method: "POST",
